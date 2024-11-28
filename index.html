@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Form -->
+    <form id="contactForm">
+        <div class="wrapper centered">
+          <article class="letter">
+            <div class="side">
+              <h1>Contact M.Bilal</h1>
+              <p>
+                <textarea placeholder="Your message" required></textarea>
+              </p>
+            </div>
+            <div class="side">
+              <p>
+                <input type="text" placeholder="Your name" required>
+              </p>
+              <p>
+                <input type="email" placeholder="Your email" required>
+              </p>
+              <p>
+                <input type="password" placeholder="Your password" required>
+              </p>
+              <p>
+                <input type="submit" id="sendLetter" value="Send">
+              </p>
+            </div>
+          </article>
+          <div class="envelope front"></div>
+          <div class="envelope back"></div>
+        </div>
+      </form>
+      <p class="result-message">Thank you for your message</p>
+
+
+
+
+  <script src="script.js"></script>
+  <!-- Email JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "TAMGdJ4BD9-yNKlVM",
+      });
+    })();
+  </script>
+</body>
+</html>
